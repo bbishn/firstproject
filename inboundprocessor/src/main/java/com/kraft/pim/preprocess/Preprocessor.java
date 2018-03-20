@@ -220,7 +220,7 @@ public class Preprocessor {
 		}
 
 		// Uploading STEPxml to STEP through IIEP
-		//result = uploadStepXML(prodInfoList);
+		result = uploadStepXML(prodInfoList);
 		result = true;
 		if (!result) {
 			logger.error("Failed uploading STEP xml TP STEP after 3 trials");
@@ -286,8 +286,8 @@ public class Preprocessor {
 		try {
 			System.out.println("Inside Preprocess main");
 			new AttributeList().setAttribute();
-			new Preprocessor().startFromLocalSAPfile("D://File_STEP//prod//SAPPROD_2017-10-30_18-28-59-3081714.xml");
-			//new Preprocessor().startFromLocalSAPfile("D://Kraft Project//Work//09-12-2016 (Enhancement)//Dummy-File//SAPPROD_2016-12-03_10-00-09-8176347.xml");
+			//new Preprocessor().startFromLocalSAPfile("D://File_STEP//prod//SAPPROD_2017-10-30_18-28-59-3081714.xml");
+			new Preprocessor().startFromLocalSAPfile("D://Kraft Project//Work//09-12-2016 (Enhancement)//Dummy-File//SAPPROD_2016-12-03_10-00-09-8176347.xml");
 			// new Preprocessor().startPreprocessor();
 		} catch (Exception e) {
 			logger.error("Error parsing from local SAP file", e);
